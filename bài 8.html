@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let a =[1,2,3,4,5,6];
+    function swap(a) {
+        for (i = 0; i < a.length/2; i++) {
+            let b = 0;
+            b = a[i];
+            a[i] = a[a.length-i-1];
+            a[a.length-i-1] = b;
+        }
+        return a;
+    }
+    alert(swap(a));
+</script>
+</html>
